@@ -17,7 +17,7 @@ jobs:
       - name: Extract project archive
         run: |
           mkdir extracted
-          unzip -q FresnelCalculator_v0.2.0_source.zip -d extracted
+          unzip -q FresnelCalculator_v0.2.0_source-1.zip -d extracted
           rsync -a --exclude='.github/' extracted/ ./
 
       - name: Set up Java
